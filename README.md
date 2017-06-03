@@ -1,4 +1,4 @@
-## hafas-parser
+## hafas-parser (WiP - work in progress)
 
 hafas-parser allows you to parse and process some raw HAFAS data.
 
