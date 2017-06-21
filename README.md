@@ -20,6 +20,8 @@ Expressions do collect and chunk raw data.
 
 [kotlin-expression-builder](https://github.com/Burnett01/kotlin-expression-builder) assists in managing complex expressions.
 
+Read my vision: [Here](https://burnett01.blogspot.de/2017/06/developers-should-ease-code-readability.html)
+
 #### Parser:
 
 The parser compiles raw data by using the dictionary and expressions.
