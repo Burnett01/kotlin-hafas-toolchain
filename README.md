@@ -1,10 +1,14 @@
-## hafas-parser (WiP - work in progress)
+## hafas-toolchain (WiP - work in progress)
 
-hafas-parser allows you to parse and process some raw HAFAS data.
+hafas-toolchain is a collection of expressions, dictionary and a parser. <br />With these tools you can parse and process raw HAFAS files.
+
+**What is HAFAS?**
 
 HAFAS is a system used by hundreds of transportation companies world-wide.<br>
 In order to make raw HAFAS data more accessible,
 this project will provide all the tools that are necessary.
+
+--
 
 #### Dictionary:
 
@@ -16,6 +20,6 @@ Expressions do collect and chunk raw data.
 
 [kotlin-expression-builder](https://github.com/Burnett01/kotlin-expression-builder) assists in managing complex expressions.
 
-#### Converter:
+#### Parser:
 
-The converter compiles raw data by using the dictionary and expressions.
+The parser compiles raw data by using the dictionary and expressions.
