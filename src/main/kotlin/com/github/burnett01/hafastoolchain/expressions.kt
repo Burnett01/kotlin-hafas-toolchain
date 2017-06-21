@@ -89,9 +89,7 @@ object EXPR {
                 or()
                 word { range(1, 3, ',') }
             }
-            match { 
-                whitespace()
-            }
+            match { whitespace() }
             quantity(Q.ZERO_OR_ONE)
             capture {
                 char('R')
