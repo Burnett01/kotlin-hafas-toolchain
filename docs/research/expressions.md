@@ -3,6 +3,8 @@
 
 #### Dates:
 
+This expression extracts a date (eg. 04.05.2020)
+
 > (\\d{2}.\\d{2}.\\d{4})
 
 ```kotlin
@@ -20,6 +22,11 @@ capture {
 ### LIN:
 
 #### Linien Attribute + Richtungverlauf (Routes):
+
+This expression captures the keys (Z L A R G) and their corresponding values.
+The keys are translated into human readable language by using the [Dictionary](../master/docs/research/dictionary.md).
+
+See a full explanation here: [Click](https://burnett01.blogspot.de/2017/06/developers-should-ease-code-readability.html)
 
 > ^(?:\\*([ZLARG])[ ](\\d+|\\w{1,3})[ ]?(R\\d{6})?|(^\\d{7}))
 
