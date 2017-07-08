@@ -27,9 +27,20 @@ package com.github.burnett01.hafastoolchain
 import com.github.burnett01.expression.*
 import java.io.*
 
-
+/**
+ * The parser class
+ *
+ * @constructor Creates a parser
+ * @param expr the expression
+ * @param path the file path
+ */
 class Parser(val expr: Expression?, val path: String) {
 
+    /**
+     * Runs the parsing process
+     *
+     * @return none
+     */
     fun parse() {
 
         println("Reading file into stream buffer: ${path}");
