@@ -31,4 +31,6 @@ fun main(args: Array<String>)
     Dictionary().codes.forEach() {
         println(it)
     }
+
+    Parser(EXPR.LIN, args[0]).parse()
 }
