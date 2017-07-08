@@ -22,15 +22,46 @@
 *
 */
 
-import com.github.burnett01.hafastoolchain.*
+package com.github.burnett01.hafastoolchain
 
-fun main(args: Array<String>)
-{
-    println("Getting directory entries:")
+import com.github.burnett01.expression.*
+import java.io.*
 
-    Dictionary().codes.forEach() {
-        println(it)
+
+class Parser(val expr: Expression?, val path: String) {
+
+    fun parse() {
+
+        println("Reading file into stream buffer: ${path}");
+
+        File(path).inputStream().buffered().reader().use { reader ->
+        
+            val text = reader.readText()
+
+            expr!!.compile().findAll(text).forEach() {
+
+                val group1 = it.groups[1]?.value
+                val group2 = it.groups[2]?.value
+                val group3 = it.groups[3]?.value
+                val group4 = it.groups[4]?.value
+
+                val dict1 = Dictionary().codes[group1]
+                val dict2 = Dictionary().codes[group2]
+
+                println(
+                    when { 
+                        group1 is String -> """
+                            [${group1}] ${dict1}: ${if(dict2 != null) dict2 else group2} - ${group3}
+                        """.trim()
+
+                        else -> "Halt: " + group4
+                    }
+                )
+
+            }
+
+            expr.debug()
+        }
+
     }
-
-    Parser(EXPR.LIN, args[0]).parse()
 }

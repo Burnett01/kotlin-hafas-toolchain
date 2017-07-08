@@ -39,7 +39,7 @@ class Dictionary() {
     public val codes: HashMap<String, String> = hashMapOf(
           "Z"   to "Fahrtnummer"
         , "L"   to "Linie"
-        , "G"   to "Geräteklasse"
+        , "G"   to "Geraeteklasse"
         , "R"   to "Richtung"
         , "A"   to "Attribute"
         , "BV"  to "Bus-Verstärker"
