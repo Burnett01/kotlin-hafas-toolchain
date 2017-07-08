@@ -25,3 +25,13 @@ Read my vision: [Here](https://burnett01.blogspot.de/2017/06/developers-should-e
 #### Parser:
 
 The parser compiles raw data by using the dictionary and expressions.
+
+--
+
+### How to run (parse ``.LIN`` file):
+
+In order to run the main.jar, simply use the following cmd:
+
+```
+java -jar main.jar PATH_TO_LIN_FILE.LIN
+```
