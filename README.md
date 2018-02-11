@@ -70,3 +70,15 @@ java -jar main.jar PATH_TO_FILE.LIN
 Output:
 
 <img src="http://i.imgur.com/lL6NwGO.png" />
+
+---
+
+## Contributing
+
+You're very welcome and free to contribute. Thank you.
+
+---
+
+## License
+
+[MIT](master/LICENSE.MD)
