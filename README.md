@@ -60,7 +60,7 @@ Tested with: Kotlin Compiler version ``1.1.2-2``
 ### Run - (parse ``.LIN`` file):
 
 A .LIN file contains various vehicle attributes, routes and stops.<br>
-If you don't have any HAFAS .LIN files, simply use the [AVV HAFAS records](../master/docs/research/HAFAS records.md)
+If you don't have any HAFAS .LIN files, simply use the [AVV HAFAS records](../master/docs/research/HAFAS%20records.md)
 
 ---
 
