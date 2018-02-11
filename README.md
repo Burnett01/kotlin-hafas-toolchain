@@ -1,12 +1,13 @@
 ## hafas-toolchain
 
-hafas-toolchain is a collection of expressions, dictionary and a parser. <br />With these tools you can parse and process raw HAFAS files.
+hafas-toolchain is a collection of expressions, dictionary and a parser. <br />
+You can use these tools to parse and process raw HAFAS files.
 
 **What is HAFAS?**
 
 HAFAS is a system used by hundreds of transportation companies world-wide.<br>
 In order to make raw HAFAS data more accessible,
-this project will provide all the tools that are necessary.
+this project includes all the tools that are necessary.
 
 --
 
@@ -34,12 +35,37 @@ Docs: [Here](../master/docs/research/parser.md)
 
 --
 
-### Example - How to run (parse ``.LIN`` file):
+### Build:
 
-In order to run the main.jar, simply use the following cmd:
+Clone this repo and install the submodules.
 
 ```
-java -jar main.jar PATH_TO_LIN_FILE.LIN
+git clone https://github.com/Burnett01/kotlin-hafas-toolchain.git
+git submodule init
+git submodule update
+```
+
+After that, run the kotlin compiler to build the binary:
+
+```
+kotlinc src kotlin-expression-builder/src/main -include-runtime -d main.jar
+```
+
+Tested with: Kotlin Compiler version ``1.1.2-2``
+
+--
+
+### Run - (parse ``.LIN`` file):
+
+A .LIN file contains various vehicle attributes, routes and stops.<br>
+If you don't have any HAFAS .LIN files, simply use the [AVV HAFAS records](../master/docs/research/HAFAS records.md)
+
+---
+
+Start parsing by using the following cmd:
+
+```
+java -jar main.jar PATH_TO_FILE.LIN
 ```
 
 Output:
