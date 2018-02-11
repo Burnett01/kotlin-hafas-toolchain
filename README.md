@@ -41,6 +41,8 @@ Clone this repo and install the submodules.
 
 ```
 git clone https://github.com/Burnett01/kotlin-hafas-toolchain.git
+cd kotlin-hafas-toolchain
+
 git submodule init
 git submodule update
 ```
