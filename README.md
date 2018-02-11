@@ -1,4 +1,4 @@
-## hafas-toolchain (WiP - work in progress)
+## hafas-toolchain
 
 hafas-toolchain is a collection of expressions, dictionary and a parser. <br />With these tools you can parse and process raw HAFAS files.
 
