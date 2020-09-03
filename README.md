@@ -53,7 +53,7 @@ After that, run the kotlin compiler to build the binary:
 kotlinc src kotlin-expression-builder/src/main -include-runtime -d main.jar
 ```
 
-Tested with: Kotlin Compiler version ``1.1.2-2``
+Tested with: Kotlin Compiler version ``1.0.4`` and ``1.3.61``
 
 --
 
