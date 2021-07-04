@@ -47,13 +47,13 @@ git submodule init
 git submodule update
 ```
 
-After that, run the kotlin compiler to build the binary:
+After that, run the kotlin compiler (kotlinc JVM) to build the binary:
 
 ```
 kotlinc src kotlin-expression-builder/src/main -include-runtime -d main.jar
 ```
 
-Tested with: Kotlin Compiler version ``1.0.4`` and ``1.3.61``
+Tested with: Kotlin Compiler (JVM) version ``1.0.4``, ``1.3.61`` ``1.5.20``
 
 --
 
